@@ -1,0 +1,12 @@
+<div>
+  <mat-card >
+      <mat-toolbar color="primary">{{ data.action ? data.action : 'Add'}} Word</mat-toolbar>
+    <form fxLayout="stretch" fxLayout="column" class="login-div" [formGroup]="formGroup" (ngSubmit)="wordProcess()">
+      <mat-form-field>
+        <input matInput placeholder="word" formControlName="word"/>
+      </mat-form-field>
+      <br>
+      <button mat-raised-button type="submit">{{ data.action ? data.action : 'Add'}} Word</button>
+    </form>
+  </mat-card>
+</div>
